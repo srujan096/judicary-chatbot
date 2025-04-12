@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Judiciary Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Indian Judiciary Chatbot</h1>
+            <p>Your assistant for navigating India's legal system</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#chatbot">Chatbot</a></li>
+                <li><a href="#document-upload">Document Upload</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <button id="language-toggle">Switch to Hindi</button>
+
+    <section id="about" class="container">
+        <h2>About the Indian Judiciary Chatbot</h2>
+        <p>
+            The Indian Judiciary Chatbot is an AI-powered tool designed to assist citizens with legal information, court
+            procedures, and resources within the Indian judicial system. Whether you need help understanding your
+            rights,
+            filing a case, or tracking a court matter, this chatbot provides guidance in a simple and accessible way.
+        </p>
+        <p>
+            Inspired by the principles of justice, equality, and accessibility enshrined in the Constitution of India,
+            this chatbot aims to empower individuals with knowledge and connect them to legal support services. It is
+            not
+            a substitute for professional legal advice but a companion for navigating the system.
+        </p>
+    </section>
+
+    <section id="resources" class="container">
+        <h2>Legal Resources</h2>
+        <div class="resources-grid">
+            <div class="resource-card">
+                <h3>Legal Information</h3>
+                <p>
+                    Access comprehensive legal resources, including acts, judgments, and procedures from the Indian
+                    judiciary.
+                </p>
+                <a href="https://www.indiacode.nic.in/" target="_blank" class="resource-link">India Code</a>
+            </div>
+            <div class="resource-card">
+                <h3>Find a Lawyer</h3>
+                <p>
+                    Connect with advocates and legal aid services across India for professional assistance.
+                </p>
+                <a href="https://www.barcouncilofindia.org/" target="_blank" class="resource-link">Bar Council</a>
+            </div>
+            <div class="resource-card">
+                <h3>Court Services</h3>
+                <p>
+                    Explore e-Courts services for case status, cause lists, and online filing in Indian courts.
+                </p>
+                <a href="https://services.ecourts.gov.in/" target="_blank" class="resource-link">e-Courts</a>
+            </div>
+            <div class="resource-card">
+                <h3>Legal Aid</h3>
+                <p>
+                    Get free legal aid and support through NALSA for those who cannot afford legal services.
+                </p>
+                <a href="https://nalsa.gov.in/" target="_blank" class="resource-link">NALSA</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-grid">
+            <div class="faq-card">
+                <h3>How do I file a case?</h3>
+                <p>
+                    Visit your local court or use the e-Courts portal to file online. You'll need to submit required
+                    documents and pay applicable fees.
+                </p>
+            </div>
+            <div class="faq-card">
+                <h3>What is legal aid?</h3>
+                <p>
+                    Legal aid provides free legal services to eligible individuals under the Legal Services Authorities
+                    Act, 1987.
+                </p>
+            </div>
+            <div class="faq-card">
+                <h3>How can I check my case status?</h3>
+                <p>
+                    Use the e-Courts portal or the case status section below with your case number to track updates.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="chatbot" class="container">
+        <h2>Chat with the Judiciary Assistant</h2>
+        <div class="chatbot-container">
+            <div id="chat-window">
+                <div id="chat-messages"></div>
+            </div>
+            <div class="chat-controls">
+                <input type="text" id="chat-input" placeholder="Ask your legal question here..." />
+                <button id="send-btn">Send</button>
+                <button id="voice-btn" class="voice-btn">
+                    <span class="voice-icon">🎤</span>
+                </button>
+            </div>
+            <div id="voice-status" class="voice-status">Click microphone to start speaking</div>
+        </div>
+    </section>
+
+    <!-- Document Upload Section -->
+    <section id="document-upload" class="container">
+        <h2>Upload Document</h2>
+        <div class="document-upload-container">
+            <input type="file" id="document-input" accept=".pdf,.doc,.docx" />
+            <button id="upload-btn">Upload</button>
+            <div id="upload-status"></div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:support@indianjudiciarychat.in">support@indianjudiciarychat.in</a> | Phone:
+                79759800844</p>
+            <p>© 2025 Indian Judiciary Chatbot. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
